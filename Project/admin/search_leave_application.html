@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href = "../styles.css">
+    <link rel="icon" href="../image/logo.png" type="image/png">
+</head>
+
+<body>
+    <div id="search">
+    <form method="post" action="search_leave_application.php">
+        <div class="searchBar">
+            <label for="searchName">Search by staff name: </label>
+            <input type="text" id="searchName" name="searchName" value="" size="20"/>
+        </div>
+        <div class="sortByBar">
+            <label for="leaveApplicationId">Sort by: </label>
+            <input type="radio" id = "leaveApplicationId" name="sortType" value="leaveApplicationId" checked/>
+            <label for="leaveApplicationId">leave application id</label>
+            <input type="radio" id = "name" name="sortType" value="name" />
+            <label for="name">name</label>
+            <input type="radio" id = "startDuration" name="sortType" value="startDuration" />
+            <label for="startDuration">start date</label>
+            <input type="radio" id = "endDuration" name="sortType" value="endDuration" />
+            <label for="endDuration">end date</label>
+            <input type="radio" id = "leaveDuration" name="sortType" value="leaveDuration" />
+            <label for="leaveDuration">leave duration</label>
+            <input type="radio" id = "leaveType" name="sortType" value="leaveType" />
+            <label for="leaveType">leave type</label>
+            <input type="radio" id = "status" name="sortType" value="status" />
+            <label for="status">status</label>
+        </div>
+        <div>
+            <input class="button-search" type="submit" value="Search/Sort"/>
+            <input class="button-search" type="submit" value="Reset" formaction="leave_application_report.php"/>
+        </div>
+    </form>
+    </div>
+</body>
+
+</html>
